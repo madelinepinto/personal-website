@@ -1,0 +1,186 @@
+/* Navbar styling */
+.navbar {
+  background: #000;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.875rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+
+/* Container for navbar contents */
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  max-width: 1500px;
+  margin: 0px;
+}
+
+/* Styling for the main logo */
+.navbar-logo {
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Navigation menu styling */
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+/* Styling for each item in the navigation menu */
+.nav-item {
+  height: 60px;
+}
+
+/* Styling for navigation links */
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  margin-right: 0px;
+}
+
+/* Hover effect for navigation links */
+.nav-links:hover {
+  border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out;
+}
+
+/* Styling for font-awesome icons */
+.fa-bars,
+.fa-typo3 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+/* Styling for mobile navigation links (hidden by default) */
+.nav-links-mobile {
+  display: none;
+}
+
+/* Styling for the mobile menu icon (hidden by default) */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Media query for responsive design (max-width: 960px) */
+@media screen and (max-width: 960px) {
+  .NavbarItems {
+    position: relative;
+  }
+
+  /* Styling for mobile navigation menu */
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: vh;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  /* Styling for active mobile navigation menu */
+  .nav-menu.active {
+    background: #141414;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  /* Styling for mobile navigation links */
+  .nav-links {
+    text-align: center;
+    padding: rem;
+    width: 100%;
+    display: table;
+  }
+
+  /* Hover effect for mobile navigation links */
+  .nav-links:hover {
+    background-color: #ffffff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+  /* Styling for the logo in mobile view */
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(150%, 14%);
+  }
+
+  /* Styling for the mobile menu icon */
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-350%, 10%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  /* Styling for font-awesome times icon in mobile view */
+  .fa-times {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+
+  .nav-menu::after {
+    content: '';
+    display: block;
+    height: 3.7px;
+    background-color: #141414; 
+    margin-top: auto; 
+  }
+
+  /* Styling for mobile navigation links (visible) */
+  /* .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 0rem auto;
+    border-radius: 4px;
+    width: 60%;
+    text-decoration: none;
+    font-size: 1.875rem;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1.5px solid #ffffff;
+    transition: all 0.3s ease-out;
+  } */
+
+  /* Hover effect for mobile navigation links */
+  /* .nav-links-mobile:hover {
+    background: #ffffff;
+    color: #242424;
+    transition: 250ms;
+  } */
+}
