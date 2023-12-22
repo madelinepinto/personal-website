@@ -1,16 +1,21 @@
 import React from 'react';
-import './Cards.css';
+import './Cards.css'; // Commenting out this line
+
 import CardItem from './CardItem';
 import banner from "../images/let-the-games-begin.jpg";
 import skills from "../images/skills-cover.jpeg";
+
+console.log('Cards component loaded');
+
 function Cards() {
   return (
     <div className='cards'>
-         <img 
-                        src={banner}
-                        alt="banner"
-                        width="100%"
-                    /><div className='cards__container'>
+      <img 
+        src={banner}
+        alt="banner"
+        width="100%"
+      />
+      <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
