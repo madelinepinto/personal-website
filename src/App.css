@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Bokor', 'UnifrakturMaguntia', 'Permanent Marker', 'Astloch';
+    font-family: 'Bokor', 'Indie Flower', 'Permanent Marker', 'Astloch';
   }
   
   body {
@@ -59,6 +59,7 @@
     background-color: #79b0e4;
     color: #fff1cb;
     font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-family: 'Permanent Marker';
   }
 

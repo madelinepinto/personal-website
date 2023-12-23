@@ -10,7 +10,8 @@ function TechCards() {
     <div className='techCards'>
         <div className='techCards__container'>
         <div className='techCards__wrapper'>
-          <ul className='techCards__items'>
+        <div className='techCards__label'>Programming Languages</div>
+          <ul className='techCards__items'>          
           <TechCardItem
               src='logos/cpp.png'
               text="C/C++"
@@ -27,9 +28,14 @@ function TechCards() {
               text="Python"
               backgroundColor={tangerine} 
 
-            />
-            
+            />               
+            <TechCardItem
+              src='logos/r.png'
+              text="R"
+              backgroundColor={tangerine}
+            />         
           </ul>
+          <div className='techCards__label'>Web Technologies</div>
           <ul className='techCards__items'>
             <TechCardItem
               src='logos/html.png'
@@ -37,7 +43,7 @@ function TechCards() {
               backgroundColor={pink}            />
             <TechCardItem
               src='logos/javascript.png'
-              text="Java Script"
+              text="JavaScript"
               backgroundColor={pink}
             />
             <TechCardItem
@@ -45,21 +51,17 @@ function TechCards() {
               text="CSS"
               backgroundColor={pink}
             />
-            <TechCardItem
-              src='logos/react.png'
-              text="React"             
-              backgroundColor={pink}
-            />
-            <TechCardItem
-              src='logos/tailwindcss.png'
-              text="Tailwind CSS"
-              backgroundColor={pink}
-            />
-          </ul>
+            </ul>            
+            <div className='techCards__label'>Development and Collaboration Tools</div>
           <ul className='techCards__items'>
             <TechCardItem
               src='logos/bash.png'
               text="Bash"
+              backgroundColor={yellow}
+            />
+            <TechCardItem
+              src='logos/vim.png'
+              text="Vi/Vim"
               backgroundColor={yellow}
             />
             <TechCardItem
@@ -71,26 +73,26 @@ function TechCards() {
               src='logos/github.png'
               text="github"
               backgroundColor={yellow}
-            />
+            />            
           </ul>
+          <div className='techCards__label'>Web Frameworks and Libraries</div>
           <ul className='techCards__items'>
             <TechCardItem
-              src='logos/excel.png'
-              text="MS Excel"
+              src='logos/react.png'
+              text="React"             
               backgroundColor={aquamarine}
             />
             <TechCardItem
-              src='logos/r.png'
-              text="R"
+              src='logos/tailwindcss.png'
+              text="TailwindCSS"
               backgroundColor={aquamarine}
             />
             <TechCardItem
-              src='logos/mysql.png'
-              text="MySQL"
+              src='logos/qt.png'
+              text="QML"
               backgroundColor={aquamarine}
-            />
+            />            
           </ul>
-          
         </div>
       </div>
     </div>
