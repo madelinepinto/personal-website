@@ -1,0 +1,49 @@
+/* Add this CSS to your stylesheets or use a style tag in your component */
+
+body {
+  margin: 0px;
+  background-color: #582b80;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+form {
+  background-color: #623887;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+input, textarea, contact-button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: "PT Sans";
+}
+
+contact-button {
+  background-color: #a67bcb;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  
+}
+
+contact-button:hover {
+  background-color: #8667a5;
+}

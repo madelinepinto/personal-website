@@ -18,8 +18,7 @@
     font-size: 3rem;
   }
   
-  .about {
-    
+  .about {    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,6 +32,8 @@
     background-size: fill;
     background-repeat: no-repeat;
     color: #fff;
+    font-family: 'Permanent Marker';
+
     font-size: 100px;
   }
   
