@@ -6,7 +6,7 @@ import TechCards from './Tech/TechCards';
 function Skils() {    
   return (
     <div className="skills-container">
-      <h1 className='skills'>SKILLS</h1>
+      <h1 className='skills'>Technical Skills</h1>
       <TechCards />
       <Footer />
     </div>
