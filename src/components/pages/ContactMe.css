@@ -2,7 +2,7 @@
 
 body {
   margin: 0px;
-  background-image: linear-gradient(#2a0447, #582b80);
+  background-image: linear-gradient(#2a0447, #9d80b7);
 }
 
 .container {
@@ -13,15 +13,27 @@ body {
 }
 
 form {
+  margin-top: -150px;
   background-color: #623887;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   align-self: center;
+  text-align: center;
+
+
 }
 
 h2 {
   color: #333;
+}
+
+f1 {
+  font-family: "Sacramento";
+  color: #fff;
+  font-weight: 550;
+  font-size: 40px;  
+  text-align: center;
 }
 
 input, textarea, .contact-form button {
@@ -42,7 +54,11 @@ input, textarea, .contact-form button {
   padding: 10px;
   cursor: pointer;
   border-radius: 8px;
-  height: 40px;
+  height: 55px;
+  font-family: "Sacramento";
+  font-size: 30px;
+  font-weight: 550;
+  /* text-align: center; */
   
 }
 

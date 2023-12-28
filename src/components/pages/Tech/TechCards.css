@@ -81,21 +81,6 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-/* .techCards__item__pic-wrap::after {
-  content: attr(data-category);
-  position: absolute;
-  bottom: 0;
-  margin-left: 10px;
-  padding: 6px 8px;
-  max-width: calc((100%) - 60px);
-  font-size: 24px;
-  font-weight: 700;
-  color: #fff;
-  font-family: 'Astloch';
-  background-color: #000000;
-  box-sizing: border-box;
-} */
-
 .techCards__item__img {
   position: relative;
   top: 0;
@@ -118,7 +103,6 @@ h1 {
 
 .techCards__item__info {
   padding: 20px 20px 20px;
-  /* height: 30px;  */
 }
 
 
