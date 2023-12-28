@@ -43,41 +43,48 @@ const ContactForm = () => {
   if (submitted) {
     return (
       <>
-        <h2>Thank you!</h2>
-        <div>We'll be in touch soon.</div>
-      </>
+      <body className="contact-form-container">   
+      <img src={banner} alt="banner" width="100%"/>
+      <div style={{ paddingBottom: "250px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", minHeight: "100vh"}}>
+        <f2>Thank you!</f2>
+        <f3>We'll be in touch soon.</f3>   
+        </div>
+      </body>
+      <Footer />
+      </>    
     );
   }
 
   return (
-    <div className="contact-form-container">   
-      <img src={banner} alt="banner" width="100%"/>
-      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }}>
-        <form 
-          className="contact-form"
-          action={FORM_ENDPOINT}
-          onSubmit={handleSubmit}
-          method="POST"
-          style={{ width: "800px" }} 
-          >
-          <f1>Write me a message!</f1>
-          <div>
-            <input type="text" placeholder="Your name" name="name" required />
-          </div>
-          <div>
-            <input type="email" placeholder="Email" name="email" required />
-          </div>
-          <div>
-            <textarea placeholder="Your message" name="message" required />
-          </div>
-          <div>
-            <button type="submit"> Send</button>
-          </div>
-        </form>
-      </div>
+    <>
+      <body className="contact-form-container">   
+        <img src={banner} alt="banner" width="100%"/>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }}>
+          <form 
+            className="contact-form"
+            action={FORM_ENDPOINT}
+            onSubmit={handleSubmit}
+            method="POST"
+            style={{ width: "800px" }} 
+            >
+            <f1>Write me a message!</f1>
+            <div>
+              <input type="text" placeholder="Your name" name="name" required />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" name="email" required />
+            </div>
+            <div>
+              <textarea placeholder="Your message" name="message" required />
+            </div>
+            <div>
+              <button type="submit"> Send</button>
+            </div>
+          </form>
+        </div>
+      </body>
       <Footer />
-
-    </div>
+    </>    
   );
 };
 

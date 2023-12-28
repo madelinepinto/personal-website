@@ -1,8 +1,8 @@
-/* Add this CSS to your stylesheets or use a style tag in your component */
-
-body {
+body.contact-form-container {
   margin: 0px;
   background-image: linear-gradient(#2a0447, #9d80b7);
+
+
 }
 
 .container {
@@ -36,6 +36,23 @@ f1 {
   text-align: center;
 }
 
+f2 {
+  font-family: "Sacramento";
+  color: #fff;
+  font-weight: 550;
+  font-size: 50px;  
+  text-align: center;
+}
+
+f3 {
+  font-family: "Sacramento";
+  color: #fff;
+  font-weight: 550;
+  font-size: 40px;  
+  text-align: center;
+}
+
+
 input, textarea, .contact-form button {
   width: 100%;
   margin-bottom: 15px;
@@ -58,7 +75,6 @@ input, textarea, .contact-form button {
   font-family: "Sacramento";
   font-size: 30px;
   font-weight: 550;
-  /* text-align: center; */
   
 }
 
