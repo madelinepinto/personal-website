@@ -48,13 +48,16 @@ const ContactForm = () => {
   }
 
   return (
-    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }}>
-      <form
+    <div className="container">
+      <div className="contact-form-container"></div>    
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }}>
+      <form 
+        className="contact-form"
         action={FORM_ENDPOINT}
         onSubmit={handleSubmit}
         method="POST"
-        style={{ width: "600px" }} // Adjust the width as needed
-      >
+        style={{ width: "600px" }} 
+        >
         <div>
           <input type="text" placeholder="Your name" name="name" required />
         </div>
@@ -65,9 +68,10 @@ const ContactForm = () => {
           <textarea placeholder="Your message" name="message" required />
         </div>
         <div>
-          <contact-button type="submit"> Send a message </contact-button>
+          <button type="submit"> Send a message </button>
         </div>
       </form>
+    </div>
     </div>
   );
 };
