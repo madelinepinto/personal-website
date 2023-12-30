@@ -2,12 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Bokor', 'Indie Flower', 'Permanent Marker', 'Astloch','Sacramento';
+    font-family: 'Bokor', 'Indie Flower', 'Permanent Marker', 'Astloch', 'IM Fell DW Pica';
   }
   
   body {
     margin: 0;
     padding: 0;
+    background-color: aqua;
   }
   
   .home{
@@ -42,6 +43,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
+    background-color: #333;
+
     font-size: 100px;
   }
 
@@ -65,6 +68,12 @@
   }
 
   .home-container {
-    background-color: #000000; /* Choose your desired background color */
-    padding: 0px; /* Optional: Add padding to the container */
+    background-color: #000000; 
+    padding: 0px; 
+  }
+
+  .experience-container {
+    background-color: #53382f; 
+    font-family: 'IM Fell DW Pica';
+    padding-bottom: 40px;
   }
