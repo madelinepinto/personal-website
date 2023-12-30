@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cards.css'; // Commenting out this line
+import './Cards.css';
 
 import CardItem from './CardItem';
 import banner from "../images/let-the-games-begin.jpg";
