@@ -26,7 +26,6 @@ import forest from '../../images/forest.png';
 
 const Experience = () => {
   return (
-    <>
     <div className="experience-container">
     <Heading>Work Experience</Heading>
       <Section imgStart={false}>
@@ -101,9 +100,7 @@ const Experience = () => {
           </TextSection>
         </SectionColumn>
       </Section>
-    </div>  
-    <Footer />
-    </>
+    </div> 
 
 
   )

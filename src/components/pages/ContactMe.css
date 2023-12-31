@@ -1,7 +1,9 @@
 body.contact-form-container {
   margin: 0px;
+  overflow: hidden;
   background-image: linear-gradient(#2a0447, #9d80b7);
-
+  min-height: 100vh;
+  position: relative;
 
 }
 
@@ -20,15 +22,10 @@ form {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   align-self: center;
   text-align: center;
-
-
+  z-index: 2;
 }
 
-h2 {
-  color: #333;
-}
-
-f1 {
+h1 {
   font-family: "Sacramento";
   color: #fff;
   font-weight: 550;
@@ -36,7 +33,7 @@ f1 {
   text-align: center;
 }
 
-f2 {
+h2 {
   font-family: "Sacramento";
   color: #fff;
   font-weight: 550;
@@ -44,14 +41,13 @@ f2 {
   text-align: center;
 }
 
-f3 {
+h3 {
   font-family: "Sacramento";
   color: #fff;
   font-weight: 550;
   font-size: 40px;  
   text-align: center;
 }
-
 
 input, textarea, .contact-form button {
   width: 100%;
@@ -74,10 +70,38 @@ input, textarea, .contact-form button {
   height: 55px;
   font-family: "Sacramento";
   font-size: 30px;
-  font-weight: 550;
-  
+  font-weight: 550;  
 }
 
 .contact-form button:hover {
   background-color: #8667a5;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  background: #fff;
+  width: 2px;
+  height: 2px;
+  animation: twinkle 3s infinite;
+  box-shadow: 0 0 10px 5px rgb(199, 140, 233);
+  
+}
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }

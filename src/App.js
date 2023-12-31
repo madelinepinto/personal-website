@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import './App.css';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
@@ -31,6 +32,7 @@ function App() {
           <Route path='/' element={<Navigate to="/Contact-Me" />} />
           <Route path='/Contact-Me' element={<ContactMe />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );

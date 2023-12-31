@@ -10,9 +10,7 @@ export const Section = styled.div`
   flex-wrap: wrap;
   align-items: center;
   flex-direction: ${({ imgStart }) => (imgStart ? 'row' : 'row-reverse')};
-  // border: 3px solid blue;
   margin-top: ${({ imgStart }) => (imgStart ? '80px' : '0')};
-
   @media screen and (max-width: 1300px) {
     margin-top: ${({ imgStart }) => (imgStart ? '40px' : '0')};
   }
@@ -27,7 +25,7 @@ export const Heading = styled.h2`
   font-size: 80px;
   font-weight: 500;
   padding: 30px;
-  text-align: center; /* Center the text */
+  text-align: center;
 `
 
 
@@ -36,8 +34,6 @@ export const SectionColumn = styled.div`
   max-width: 50%;
   flex-basis: 50%;
   justify-content: center;
-  // border: 3px solid green;
-
   @media screen and (max-width: 960px) {
     max-width: 100%;
     flex-basis: 100%;
@@ -52,15 +48,10 @@ export const Image = styled.img`
   vertical-align: middle;
   object-fit: contain;
   float: ${({ imgStart }) => (imgStart ? 'left' : 'right')};
-  // border: 3px solid red;
 `
 
 export const TextSection = styled.div`
-  color: #FFFFFF;
-  
   margin: 0;
-  // border: 3px solid red;
-
   @media screen and (max-width: 960px) {
     margin: 30px 0 0 0;
     text-align: center;
@@ -115,7 +106,6 @@ export const Description = styled.p`
   
   color: #d9c6b5; 
   font-family: 'IM Fell DW Pica';
-  // border: 3px solid green; 
   @media screen and (max-width: 500px) {
     font-size: 20px;
   }

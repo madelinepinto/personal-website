@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./ContactMe.css"
-import Footer from '../Footer';
 import banner from "../../images/speak-now.png";
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/6a441d30-a4ec-11ee-bd16-0d70bf7b86f5"; // TODO - update to the correct endpoint
@@ -42,23 +41,47 @@ const ContactForm = () => {
 
   if (submitted) {
     return (
-      <>
       <body className="contact-form-container">   
       <img src={banner} alt="banner" width="100%"/>
+      <div className="stars">
+          {/* Create stars dynamically */}
+          {Array.from({ length: 75 }).map((_, index) => (
+            <div
+              key={index}
+              className="star"
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 4}s`, // Randomize animation delay
+              }}
+            />
+          ))}
+        </div>
       <div style={{ paddingBottom: "250px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", minHeight: "100vh"}}>
-        <f2>Thank you!</f2>
-        <f3>We'll be in touch soon.</f3>   
+        <h2>Thank you!</h2>
+        <h3>We'll be in touch soon.</h3>   
         </div>
       </body>
-      <Footer />
-      </>    
     );
   }
 
   return (
-    <>
       <body className="contact-form-container">   
         <img src={banner} alt="banner" width="100%"/>
+        <div className="stars" >
+          {/* Create stars dynamically */}
+          {Array.from({ length: 75 }).map((_, index) => (
+            <div
+              key={index}
+              className="star"
+              style={{
+                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 2}s`, // Randomize animation delay
+              }}
+            />
+          ))}
+        </div>
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "100vh" }}>
           <form 
             className="contact-form"
@@ -67,7 +90,7 @@ const ContactForm = () => {
             method="POST"
             style={{ width: "800px" }} 
             >
-            <f1>Write me a message!</f1>
+            <h1>Write me a message!</h1>
             <div>
               <input type="text" placeholder="Your name" name="name" required />
             </div>
@@ -83,8 +106,6 @@ const ContactForm = () => {
           </form>
         </div>
       </body>
-      <Footer />
-    </>    
   );
 };
 

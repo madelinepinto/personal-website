@@ -84,7 +84,7 @@ function Navbar() {
                         )}
                         </li>                
                     </ul> 
-                    {button && <Button buttonStyle='btn--outline'  buttonSize= 'btn--medium'>CONTACT ME</Button>}                 
+                    {button && <Button buttonStyle='btn--outline'  buttonSize= 'btn--medium' onClick={handleScroll} >CONTACT ME</Button>}                 
             </div>
         </nav>     
     </>

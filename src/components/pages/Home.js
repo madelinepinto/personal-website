@@ -10,7 +10,6 @@ function Home() {
     <div className="home-container">
       <img src={banner} alt="banner" width="100%" />
       <Cards />
-      <Footer />
     </div>
     
   );

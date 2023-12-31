@@ -8,9 +8,7 @@ function Skils() {
     <div className="skills-container">
       <h1 className='skills'>Technical Skills</h1>
       <TechCards />
-      <Footer />
-    </div>
-    
+    </div>    
   );
 }
 
