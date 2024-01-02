@@ -66,7 +66,6 @@ export const Title = styled.h1`
   font-size: 42px;
   @media screen and (min-width: 961px) {
     text-align: left;
-
   }
   @media screen and (max-width: 500px) {
     font-size: 35px;
@@ -79,6 +78,9 @@ export const Company = styled.h2`
   color: #a34c29; 
   font-family: 'IM Fell DW Pica';
   font-size: 32px;
+  @media screen and (min-width: 961px) {
+    text-align: left;
+  }
   @media screen and (max-width: 500px) {
     font-size: 25px;
   }

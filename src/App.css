@@ -26,18 +26,8 @@
     background-color: aqua;
     color: #801a1a;
     font-size: 100px;
+    font-family: 'Dancing Script'
   }
-/*   
-  .contact-me {
-    background-position: center;
-    background-size: fill;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-family: 'Permanent Marker';
-
-    font-size: 100px;
-  }
-   */
   .experience {
     background-position: center;
     background-size: cover;
@@ -76,4 +66,12 @@
     background-color: #5a423a; 
     font-family: 'IM Fell DW Pica';
     padding-bottom: 40px;
+  }
+
+  .about-container {
+    background-image: linear-gradient(to top right, aqua, pink, pink, rgb(255, 255, 101)); 
+    font-family: 'Dancing Script';
+    padding: 40px;    
+
+    padding-bottom: 80px;
   }
