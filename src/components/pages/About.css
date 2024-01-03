@@ -56,7 +56,7 @@ body, h1, h2, p {
   font-weight: 600;
   text-align: left;
   font-family: 'Dancing Script';
-  color: rgb(74, 216, 204);
+  color: rgb(167, 129, 255);
 
 }
 
@@ -69,10 +69,6 @@ body, h1, h2, p {
   font-family: 'Helvetica', sans-serif;
   font-weight: 600;
   color:rgb(85, 209, 236);
-}
-
-.bottom-text{
-  color:rgb(167, 129, 255);
 }
 
 .MusicLink {

@@ -24,7 +24,7 @@ const About = () => {
             </p>
             <h2 className="Subtitle">A little bit about myself</h2>
             <p className="Body">
-              I love learning all things tech. I have a particular interest in areas like Cybersecurity, Bioinformatics, and Machine Learning.
+              I love learning all things tech. I have a particular interest in areas like Human Computer Interactions, AI, and Machine Learning.
               I'm currently learning about data structures, digital hardware, and sequential programs.
             </p>
           </div>
@@ -34,7 +34,7 @@ const About = () => {
       <div className="Section">        
         <div className="TextColumn">
           <div className="TextSection">            
-            <h2 className="Subtitle bottom-text">one more thing ...</h2>
+            <h2 className="Subtitle">one more thing ...</h2>
             <h1 className="Title">I love Taylor Swift </h1>
             <p className="Body">
               Each page of this website is inspired by one of Taylor's iconic albums. See if you can spot all the easter eggs!
