@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../App.css';
-import Footer from '../Footer';
+import Loader from '../Loader';
 
 //Styled Components
 import { 
@@ -20,12 +20,22 @@ import COMLogo from '../../images/com-logo.png';
 import plane from '../../images/plane.png';
 import forest from '../../images/forest.png';
 
-
-
-//IMAGE DIMENSIONS: 1500W x 1000H
-
 const Experience = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+      const delay = setTimeout(() => {
+          setLoading(false);
+      }, 1800);
+      return () => clearTimeout(delay);
+  }, []);
+
+
   return (
+    <div>
+      {loading ? (
+        <Loader />
+      ) : (
     <div className="experience-container">
     <Heading>Work Experience</Heading>
       <Section imgStart={false}>
@@ -100,9 +110,21 @@ const Experience = () => {
           </TextSection>
         </SectionColumn>
       </Section>
+      <div style={{ padding: '40px 0 0 0' }}>
+        <iframe
+          style={{ borderRadius: 12 }}
+          src="https://open.spotify.com/embed/album/6AORtDjduMM3bupSWzbTSG?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allowFullScreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
     </div> 
-
-
+    )}
+    </div>  
   )
 }
 

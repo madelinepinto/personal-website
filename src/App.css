@@ -8,70 +8,60 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: aqua;
-  }
-  
-  .home{
-    display: flex;
-    height: 90vh;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-  }
-  
-  .about {    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: aqua;
-    color: #801a1a;
-    font-size: 100px;
-    font-family: 'Dancing Script'
-  }
-  .experience {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    background-color: #333;
-
-    font-size: 100px;
+    background-color: pink;
   }
 
-  .music {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 100px;
-  }
-
-  .skills {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #79b0e4;
+  .skills{
     color: #fff1cb;
     font-size: 100px;
+    background-color: #79b0e4;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     font-family: 'Permanent Marker';
   }
 
+  .skills-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#79b0e4, #caddf0);
+    color: #fff1cb;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Permanent Marker';
+    margin-bottom: -45px;
+
+  } 
+
   .home-container {
     background-color: #000000; 
     padding: 0px; 
+    margin-bottom: -18px;
   }
 
   .experience-container {
     background-color: #4f3831; 
     font-family: 'IM Fell DW Pica';
-    padding-bottom: 40px;
+    margin-bottom: -18px;
+
   }
 
   .about-container {
-    background-image: linear-gradient(to top right, aqua, pink, pink, rgb(255, 255, 101)); 
+    background-image: linear-gradient(to top right, rgb(51, 214, 255), pink, pink, rgb(255, 255, 101)); 
     font-family: 'Dancing Script';
-    padding: 40px;    
+    padding: 40px 0 0;    
+    margin-bottom: -15px;
 
-    padding-bottom: 80px;
+  }
+
+  .music-container{
+    background-image: linear-gradient(#a68249, #eccc8c);
+    font-family: 'Tenor Sans';
+    padding: 40px;   
+  }
+
+  .cookies-container{
+    background-image: linear-gradient(to bottom right, rgb(16, 16, 63), rgb(18, 18, 68), rgb(7, 7, 94),  rgb(13, 13, 82), rgb(40, 41, 83),  rgb(43, 43, 63) ,rgb(34, 34, 71));
+    font-family: 'Tenor Sans';
+    padding: 0px;   
+    margin-bottom: -18px;
   }

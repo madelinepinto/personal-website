@@ -53,32 +53,32 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/About' className='nav-links' onClick={handleScroll}>
+                            <Link to='/about' className='nav-links' onClick={handleScroll}>
                                 About
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/Skills' className='nav-links' onClick={handleScroll}>
+                            <Link to='/skills' className='nav-links' onClick={handleScroll}>
                                 Skills
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/Experience' className='nav-links' onClick={handleScroll}>
+                            <Link to='/experience' className='nav-links' onClick={handleScroll}>
                                 Experience
                             </Link>
                         </li>
-                        <li className='nav-item'>
+                        {/* <li className='nav-item'>
                             <Link to='/Music' className='nav-links' onClick={handleScroll}>
                                 Music
                             </Link>
-                        </li>
+                        </li> */}
                         <li className='nav-item'>
                         {button ? (
-                        <Link to='/Contact-Me' className='nav-links-mobile' onClick={handleScroll}>
+                        <Link to='/contact' className='nav-links-mobile' onClick={handleScroll}>
                             Contact Me
                         </Link>
                         ) : (
-                        <Link to='/Contact-Me' className='nav-links' onClick={handleScroll}>
+                        <Link to='/contact' className='nav-links' onClick={handleScroll}>
                             Contact Me
                         </Link>
                         )}

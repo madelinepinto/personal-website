@@ -45,7 +45,7 @@ function Footer() {
           Copyright © Madeline Pinto
         </p>
         <p className='footer-text'>
-          <Link to='/Cookies' className='footer-text-link' onClick={handleScroll}>
+          <Link to='/cookies' className='footer-text-link' onClick={handleScroll}>
             Cookie Policy
           </Link>
         </p>

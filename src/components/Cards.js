@@ -4,6 +4,11 @@ import './Cards.css';
 import CardItem from './CardItem';
 import banner from "../images/let-the-games-begin.jpg";
 import skills from "../images/skills-cover.jpeg";
+import about from "../images/about.PNG";
+import contact from "../images/contact.jpg";
+import experience from "../images/experience.JPG";
+
+
 
 console.log('Cards component loaded');
 
@@ -19,36 +24,36 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-9.jpg'
-              text="Learn about Madeline's Reputation"
+              src={about}
+              text="Learn about my Reputation"
               label='About'
-              path='/About'
+              path='/about'
             />
             <CardItem
               src={skills}
-              text="Madeline's Technical Skills (From the Vault)"
+              text="My Technical Skills (From the Vault)"
               label='Luxury'
-              path='/Skills'
+              path='/skills'
             />
           </ul>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-3.jpg'
+              src={experience}
               text="Explore the details of my professional background"
               label='Mystery'
-              path='/Experience'
+              path='/experience'
             />
-            <CardItem
-              src='images/img-4.jpg'
+            {/* <CardItem
+              src='images/about.p'
               text='Listen to my favourite songs'
               label='Adventure'
               path='/Music'
-            />
+            /> */}
             <CardItem
-              src='images/img-8.jpg'
+              src={contact}
               text='Reach out to me!'
               label='Adrenaline'
-              path='/Contact-me'
+              path='/contact'
             />
           </ul>
         </div>

@@ -1,14 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Loader from '../Loader';
 import '../../App.css';
 import "./About.css"
 import me from '../../images/me.jpg';
 import GHC from '../../images/ghc.jpg';
 
-import { Link } from 'react-router-dom';
-
 
 const About = () => {
+  const [loading, setLoading] = useState(false);
+  
+  useEffect(() => {
+      const delay = setTimeout(() => {
+          setLoading(false);
+      }, 1800);
+      return () => clearTimeout(delay);
+  }, []);
+
   return (
+    <div>
+    {loading ? (
+      <Loader />
+    ) : (
     <div className="about-container">
       <div className="Section">      
       <div className="ImageColumn">
@@ -30,15 +42,14 @@ const About = () => {
           </div>
         </div>        
       </div>
-
       <div className="Section">        
         <div className="TextColumn">
           <div className="TextSection">            
             <h2 className="Subtitle">one more thing ...</h2>
             <h1 className="Title">I love Taylor Swift </h1>
             <p className="Body">
+              In fact, in the year 2023, I listened to 70,000 minutes of Taylor's music. I also travelled over 8,000 km to see her live (it was totally worth it). 
               Each page of this website is inspired by one of Taylor's iconic albums. See if you can spot all the easter eggs!
-              To learn more about my TS obsession, check out my  <Link to="/Music" className="MusicLink">music</Link> page.
             </p>
           </div>
         </div>
@@ -46,7 +57,19 @@ const About = () => {
           <img className="Image" src={GHC} alt="GHC" />
         </div>
       </div>
+        <iframe
+          style={{ borderRadius: 12 }}
+          src="https://open.spotify.com/embed/album/1NAmidJlEaVgA3MpcPFYGq?utm_source=generator&theme=0"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allowFullScreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
     </div>
+     )}
+     </div>
   );
 }
 
