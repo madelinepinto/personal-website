@@ -24,11 +24,11 @@ form {
   text-align: center;
   z-index: 2;
 }
+
 .spotify-embeds{
   position: relative;
   z-index: 2;
   margin-bottom: -18px;
-
 }
 
 h1 {
@@ -99,8 +99,7 @@ input, textarea, .contact-form button {
   width: 2px;
   height: 2px;
   animation: twinkle 3s infinite;
-  box-shadow: 0 0 10px 5px rgb(199, 140, 233);
-  
+  box-shadow: 0 0 10px 5px rgb(199, 140, 233);  
 }
 
 @keyframes twinkle {

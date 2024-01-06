@@ -1,5 +1,3 @@
-//IMAGE DIMENSIONS: 1500W x 1000H
-
 import styled from 'styled-components'
 
 export const Section = styled.div`
@@ -27,7 +25,6 @@ export const Heading = styled.h2`
   padding: 30px;
   text-align: center;
 `
-
 
 export const SectionColumn = styled.div`
   flex: 1;

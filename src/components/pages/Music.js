@@ -4,6 +4,8 @@ import './Music.css'
 import Taylor from '../../images/taylor.jpeg';
 import Loader from '../Loader';
 
+// This page is not published yet 
+// To publish, uncomment lines in Navbar.js and Cards.js
 const Music = () => {
     const [loading, setLoading] = useState(false);
 

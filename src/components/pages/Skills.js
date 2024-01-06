@@ -3,7 +3,7 @@ import Loader from '../Loader';
 import '../../App.css';
 import TechCards from './Tech/TechCards';
 
-function Skils() { 
+const Skills = () =>  { 
     const [loading, setLoading] = useState(false);
     useEffect(() => {
         const delay = setTimeout(() => {
@@ -36,4 +36,4 @@ function Skils() {
     );
 }
 
-export default Skils;
+export default Skills;

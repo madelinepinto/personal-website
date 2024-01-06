@@ -8,20 +8,20 @@ const Home = () => {
   const [loading, setLoading] = useState(false);
   
   useEffect(() => {
-      const delay = setTimeout(() => {
-          setLoading(false);
-      }, 1800);
-      return () => clearTimeout(delay);
+    const delay = setTimeout(() => {
+      setLoading(false);
+    }, 1800);
+    return () => clearTimeout(delay);
   }, []);
 
-    return (
-        <div>
-            {loading ? (
-                <Loader />
-            ) : (
+  return (
+    <div>
+      {loading ? (
+        <Loader />
+      ) : (
         <>
-            <img src={banner} alt="banner" width="100%" style={{ marginBottom: "-9px" }} />
-            <Cards />
+          <img src={banner} alt="banner" width="100%" style={{ marginBottom: "-9px" }} />
+          <Cards />
           <iframe
             style={{ borderRadius: 12 }}
             src="https://open.spotify.com/embed/album/6DEjYFkNZh67HP7R9PSZvv?utm_source=generator&theme=0"

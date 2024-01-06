@@ -8,10 +8,6 @@ import about from "../images/about.PNG";
 import contact from "../images/contact.jpg";
 import experience from "../images/experience.JPG";
 
-
-
-console.log('Cards component loaded');
-
 function Cards() {
   return (
     <div className='cards'>

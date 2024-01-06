@@ -7,13 +7,13 @@
 
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
-  gap: 16px; /* Adjust the gap between images */
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
 
 .gallery-image {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  object-fit: cover;
 }

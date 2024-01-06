@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 
 function CardItem(props) {
-
   const handleClick = () => {
     scroll.scrollToTop({ duration: 0 });
   };
@@ -15,7 +14,7 @@ function CardItem(props) {
           <figure className='cards__item__pic-wrap' data-category={props.label}>
             <img
               className='cards__item__img'
-              alt='Travel Image'
+              alt='Image'
               src={props.src}
             />
           </figure>

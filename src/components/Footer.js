@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 
 
-function Footer() {
-    const handleScroll = () => {
-        scroll.scrollToTop({ duration: 0 });
-    }
+function Footer() {  
+  const handleScroll = () => {
+      scroll.scrollToTop({ duration: 0 });
+  }
+
   return (
     <div className='footer-container'>
       <section className='footer'>

@@ -19,18 +19,16 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading delay (replace with your actual loading logic)
     const delay = setTimeout(() => {
       setLoading(false);
     }, 4100);
-
-    // Clean up the timeout to avoid memory leaks
     return () => clearTimeout(delay);
   }, []);
+
   return (
     <>
       <Router>
-        {loading && <Loader />} {/* Show loader while loading */}
+        {loading && <Loader />}
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

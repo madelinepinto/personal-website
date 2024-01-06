@@ -7,7 +7,7 @@ const badJokes = [
   "How do you comfort a JavaScript bug? You console it!",
   "Why do programmers prefer dark mode? Because light attracts bugs!",
   "Why did the loading bar break up with the progress bar? It needed some space.",
-  "Did you hear about the loading bar that walked into a bar? Neither did we, it's still loading.",
+  "Did you hear about the loading bar that walked into a bar? Neither did I, it's still loading.",
   "Hold on, I'm working on my magic spell to make this load faster. Abracadabra, loading...!",
   "TIP: Don't use 'beef stew' as a computer password. It's not stroganoff.",
   "Why did the computer get glasses? To improve its websight",
@@ -28,6 +28,7 @@ const badJokes = [
   "How many symbols do you need to type on a keyboard to make a heart? Less than three.",
   "There are 10 types of people in the world: those who understand binary, and those who don’t.",
   "Why do Java developers wear glasses? Because they can’t C#.",
+  "Are you ready for it?"
 ];
 
 function Loader() {
