@@ -4,9 +4,9 @@ import './Cards.css';
 import CardItem from './CardItem';
 import banner from "../images/let-the-games-begin.jpg";
 import skills from "../images/skillsCover.jpeg";
-import about from "../images/about.PNG";
+import about from "../images/about.png";
 import contact from "../images/contact.jpg";
-import experience from "../images/experience.JPG";
+import experience from "../images/experience.jpg";
 
 function Cards() {
   return (
