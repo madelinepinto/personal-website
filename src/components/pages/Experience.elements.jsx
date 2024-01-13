@@ -17,15 +17,6 @@ export const Section = styled.div`
   }
 `
 
-export const Heading = styled.h2`
-  color: #8f331f; 
-  font-family: 'IM Fell DW Pica';
-  font-size: 80px;
-  font-weight: 500;
-  padding: 30px;
-  text-align: center;
-`
-
 export const SectionColumn = styled.div`
   flex: 1;
   max-width: 50%;
@@ -54,11 +45,27 @@ export const TextSection = styled.div`
     text-align: center;
   }
 `
+export const Heading = styled.h2`
+  color: #8f331f; 
+  font-family: 'IM Fell DW Pica';
+  font-style: italic;
+  font-size: 80px;
+  font-weight: 500;
+  padding: 30px;
+  text-align: center;
+  @media screen and (max-width: 500px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 45px;
+  }
+`
 
 export const Title = styled.h1`
   color: #8a3737; 
   font-weight: 500;
   font-family: 'IM Fell DW Pica';
+  font-style: italic;
   margin: 0;
   font-size: 42px;
   @media screen and (min-width: 961px) {
@@ -74,6 +81,7 @@ export const Company = styled.h2`
   font-weight: 500;
   color: #a34c29; 
   font-family: 'IM Fell DW Pica';
+  font-style: italic;
   font-size: 32px;
   @media screen and (min-width: 961px) {
     text-align: left;
@@ -90,6 +98,7 @@ export const Time = styled.p`
   margin: 0;
   color: #d1ad92; 
   font-family: 'IM Fell DW Pica';
+  font-style: italic;
   font-size: 24px;
   @media screen and (max-width: 500px) {
     font-size: 20px;
@@ -101,10 +110,10 @@ export const Time = styled.p`
 
 export const Description = styled.p`
   margin: 30px 0 0 0;
-  font-size: 24px;
-  
+  font-size: 24px;  
   color: #d9c6b5; 
   font-family: 'IM Fell DW Pica';
+  font-style: italic;
   @media screen and (max-width: 500px) {
     font-size: 20px;
   }
