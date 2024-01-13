@@ -53,6 +53,9 @@ h1 {
   line-height: 40px;
   text-align: center;
   font-family: 'Rock Salt';
+  @media (max-width: 960px) {
+    font-size: 20px; 
+  }
 }
 
 .techCards__item__pic-wrap {
@@ -79,6 +82,9 @@ h1 {
   margin-bottom: 10px;
   color: #fff1cb;   
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  @media (max-width: 960px) {
+    font-size: 35px; 
+  }
 }
 
 .techCards__item__img {
@@ -111,13 +117,13 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 960px) {
   .techCards__items {
     display: flex;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 960px) {
   .techCards__item {
     margin-bottom: 2rem;
   }
