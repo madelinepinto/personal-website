@@ -23,7 +23,8 @@ const Home = () => {
           <img src={banner} alt="banner" width="100%" style={{ marginBottom: "-9px" }} />
           <Cards />
           <iframe
-            style={{ borderRadius: 12 }}
+            className = "rounded-iframe"
+            style={{ borderRadius: '12 !important' }}
             src="https://open.spotify.com/embed/album/6DEjYFkNZh67HP7R9PSZvv?utm_source=generator&theme=0"
             width="100%"
             height="152"

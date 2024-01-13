@@ -29,6 +29,11 @@ body {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   font-family: 'Permanent Marker';
   margin-bottom: -45px;
+  @media (max-width: 960px) {
+    h1.skills {
+      font-size: 55px; 
+    }
+  }
 
 } 
 
@@ -36,13 +41,15 @@ body {
   background-color: #000000; 
   padding: 0px; 
   margin-bottom: -18px;
+  .rounded-iframe {
+    border-radius: 12px !important; 
+  }
 }
 
 .experience-container {
   background-color: #4f3831; 
   font-family: 'IM Fell DW Pica';
   margin-bottom: -18px;
-
 }
 
 .about-container {
