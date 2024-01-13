@@ -17,3 +17,11 @@
   border-radius: 8px;
   object-fit: cover;
 }
+
+@media screen and (max-width: 960px) {
+  .Header{
+    font-size: 60px;
+  }
+}
+
+
